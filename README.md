@@ -145,6 +145,31 @@ Run the smoke test with the standard library test runner:
 PYTHONPATH=src python3 -m unittest discover -s tests
 ```
 
+## Feature workflow (Spec Kit + Codex)
+
+From this point on, new features in this repo should follow Spec Kit before implementation.
+
+Required sequence:
+
+1. create or refine the feature brief
+2. produce the Spec Kit spec artifact
+3. produce the implementation plan
+4. produce the task breakdown
+5. only then hand implementation to Codex CLI
+
+In short:
+
+```text
+specify -> plan -> tasks -> codex implement
+```
+
+Rule:
+- do not jump straight into coding a new feature from an ad-hoc prompt
+- if a feature does not have Spec Kit artifacts yet, create them first
+- implementation should map back to the planned tasks
+
+This keeps the repo readable, governable, and consistent as it grows.
+
 ## Planned architecture
 
 - query interface

@@ -29,7 +29,9 @@ Version 1 must stay narrow: query -> search -> normalize -> fetch. New providers
 
 - Spec Kit is the governing workflow for this repository.
 - Work should proceed in this order: constitution -> specify -> plan -> tasks -> implementation.
-- Codex CLI is the preferred implementation agent for executing approved plans.
+- No new feature may be implemented directly from an ad-hoc coding prompt. A feature must first exist as Spec Kit artifacts before implementation begins.
+- The minimum required path for any new feature is: feature brief -> spec artifact -> implementation plan -> task breakdown -> Codex implementation.
+- Codex CLI is the preferred implementation agent for executing approved plans, but only after the relevant Spec Kit artifacts exist.
 - Changes to schemas, CLI contracts, or adapter interfaces must be reflected in docs.
 
 ## Governance
